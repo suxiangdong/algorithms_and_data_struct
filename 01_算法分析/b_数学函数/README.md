@@ -6,4 +6,4 @@
 最简单的就是常数函数了！n是什么并不重要，f(n)的结果总是c。
 
 #### 对数函数
-<img src="http://latex.codecogs.com/gif.latex?\\f(n) = log_{b}n \quad\quad\quad b \geq 0"></img>  
+<img src="https://latex.codecogs.com/gif.latex?f(n)&space;=&space;log_{b}n&space;\quad\quad&space;b>0\quad\&\&\quad&space;b\neq1" title="f(n) = log_{b}n \quad\quad b>0\quad\&\&\quad b\neq1"></img>
