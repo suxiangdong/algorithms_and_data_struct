@@ -8,4 +8,4 @@
 #### 对数函数
 定义：f(n) = log n
 
-<img src="http://latex.codecogs.com/gif.latex?\$a_{1}" />
+<img src="http://latex.codecogs.com/gif.latex?\$a_{1}"></img>
