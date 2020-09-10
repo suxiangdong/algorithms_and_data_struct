@@ -2,10 +2,8 @@
 算法分析中最常用的有七种函数，本文将分别介绍其概念以及定理，并附带部分练习题用以加深理解。
 
 #### 常数函数
-定义：f(n) = c  
+<img src="http://latex.codecogs.com/gif.latex?\\f(n) = c"></img>  
 最简单的就是常数函数了！n是什么并不重要，f(n)的结果总是c。
 
 #### 对数函数
-定义：f(n) = log n
-
-<img src="http://latex.codecogs.com/gif.latex?\$a_{1}"></img>
+<img src="http://latex.codecogs.com/gif.latex?\\f(n) = log_{b}n"></img>  
