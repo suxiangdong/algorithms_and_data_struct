@@ -1,6 +1,8 @@
 # algorithms_and_data_struct
 
-本项目旨在从零开始介绍、研究数据结构与算法。
+本项目旨在从零开始介绍、研究数据结构与算法。  
+
+文章中所用到的数学公式均以图片形式保存在`images`目录中，如网速不好无法加载，可clone到本地用markdown查看。
 
 golang version: 1.14.2
 
