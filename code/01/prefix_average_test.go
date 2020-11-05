@@ -5,6 +5,7 @@ import (
 )
 
 func TestPrefixAverage1(t *testing.T) {
+	t.Parallel()
 	datas := []struct{
 		in []int
 		out []float32
