@@ -61,7 +61,7 @@ go语言中可以对切片进行 `append` 操作，根据容量的大小将自�
 
 ## Slice的缺点
 我们知道slice是引用类型，array是值类型，按理来说引用传递的效率优于值传递。一定是这样吗？  
-答案是否定的，我们做一个基准测试来说明：[slice vs array](../../code/03/sliceVsArray/compare_test.go)
+答案是否定的，我们做一个基准测试来说明：[slice vs array](../../code/03/sliceandarray/compare_test.go)
 
 从基准测试的结果可以看到：  
 创建数组的循环次数480286，平均执行时间2465 ns/op，堆上分配内存数量为0，内存总量为0。   

@@ -1,4 +1,4 @@
-package sliceVsArray
+package sliceandarray
 
 import "testing"
 

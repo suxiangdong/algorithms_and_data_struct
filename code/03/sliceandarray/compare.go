@@ -1,4 +1,4 @@
-package sliceVsArray
+package sliceandarray
 
 func newSlice() []int {
 	x := make([]int, 1024)
