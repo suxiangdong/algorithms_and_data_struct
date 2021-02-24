@@ -1,0 +1,13 @@
+digraph linkList {
+        rankdir=LR;
+        node [shape=record];
+        a [label="{ <data> data | <ref> }"]
+        b [label="{ <data> data | <ref> }"];
+        c [label="{ <data> data | <ref> }"];
+        d [label="{ <data> data | <ref> }"];
+        e [shape=box label="NULL"];
+        a:ref:c -> b:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        b:ref:c -> c:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        c:ref:c -> d:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        d:ref:c -> e      [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+}
