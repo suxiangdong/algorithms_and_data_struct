@@ -1,0 +1,17 @@
+digraph linkList {
+        rankdir=LR;
+        graph[pencolor=transparent];
+        node [shape=record];
+        a [label="{ <data> data | <ref> }"]
+        b [label="{ <data> data | <ref> }"];
+        c [label="{ <data> data | <ref> }"];
+        d [label="{ <data> data | <ref> }"];
+        edge[tailclip=false,arrowtail=dot,dir=both];
+        {node[shape=point height=0] p0 p4} // make p0 and p4 to small to see
+        p0:n -> a[arrowtail=none]
+        p0:s -> p4:s[dir=none]
+        a:ref:c -> b:data
+        b:ref:c -> c:data
+        c:ref:c -> d:data
+        d:ref:c -> p4:n [arrowhead=none]
+}
