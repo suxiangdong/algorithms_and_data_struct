@@ -97,22 +97,24 @@ func (list *linkedList) Delete(i int) bool {
 		return false
 	}
 
+	head := list.head
+
 	if i == 1 {
-		list.head = list.head.next
+		list.head = head.next
+	} else {
+		prev := head
+		for j := 1; j < i - 1; j++ {
+			prev = prev.next
+		}
+		beDeletedNode := prev.next
+		prev.next = beDeletedNode.next
+
+		if beDeletedNode.next == nil {
+			list.tail = prev
+		}
 	}
 
-	prevNode := list.head
-	for j := 1; j < i - 1; j++ {
-		prevNode = prevNode.next
-	}
-	beDeletedNode := prevNode.next
-	nextNode := beDeletedNode.next
-	prevNode.next = nextNode
 	list.length--
-
-	if nextNode == nil {
-		list.tail = prevNode
-	}
 	return true
 }
 
