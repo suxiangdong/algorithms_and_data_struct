@@ -5,14 +5,15 @@ import (
 )
 
 type List interface {
-	Append()
-	Insert()
-	Get()
-	Delete()
-	ToArray()
+	Append(Elem)
+	Insert(int, Elem) bool
+	Get(int) (Elem, error)
+	Delete(int) bool
+	Len() int
+	ToArray() []Elem
 }
 
-type Elem int
+type Elem interface{}
 
 type node struct {
 	data Elem
@@ -31,6 +32,10 @@ func New() *linkedList {
 		tail: nil,
 		length: 0,
 	}
+}
+
+func (list *linkedList) Len() int {
+	return list.length
 }
 
 func (list *linkedList) ToArray() []Elem {
