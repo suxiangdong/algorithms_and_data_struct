@@ -3,7 +3,7 @@ package stack
 import "errors"
 import "github.com/suxiangdong/algorithms_and_data_struct/code/04/singlylist"
 
-type stack interface {
+type Stack interface {
 	Push(interface{})
 	Pop() (interface{}, error)
 	Len() int
